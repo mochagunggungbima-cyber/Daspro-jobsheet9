@@ -6,10 +6,16 @@ public class ArrayRataNilai13 {
         int[] nilaiMhs = new int[10];
         double total = 0;
         double rata2;
-        
         for (int i = 0; i < nilaiMhs.length; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-"+(i+1)+" : ");
             nilaiMhs[i] = sc.nextInt();
+        }
+        for (int i = 0; i < nilaiMhs.length; i++) {
+            if (nilaiMhs[i] > 70) {
+                System.out.println("Nilai mahasiswa ke-"+(i+1)+" : "+nilaiMhs[i]+" = lulus!");
+            } else {
+            System.out.println("Nilai mahasiswa ke-"+(i+1)+" : "+nilaiMhs[i]+" = tidak lulus!");
+            }
         }
         for (int i = 0; i < nilaiMhs.length; i++) {
             total += nilaiMhs[i];
